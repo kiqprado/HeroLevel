@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+    <title>Hero Level</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <form action="">
+          <h1>Hero Level</h1>
+
+          <div class="input">
+            <label for="heroName"> Nomeie o seu Herói: </label>
+            <input id="heroName" type="text" placeholder="Apenas caracteres" />
+          </div>
+          <div class="input">
+            <label for="heroLevel"> Insira o XP de seu Agente: </label>
+            <input
+              id="heroLevel"
+              type="text"
+              placeholder="Números de 01 a 10999"
+            />
+          </div>
+          <button type="submit">Gerar Patente</button>
+        </form>
+      </div>
+    </main>
+
+    <section class="heroResult">
+      <div class="card popup">
+        <button id="closeResult">
+          <img src="./src/assets/x.svg" alt="" />
+        </button>
+        <h2></h2>
+        <button id="rankedLevels">Níveis de Ranked</button>
+      </div>
+    </section>
+
+    <section class="heroRanked">
+      <div class="card table">
+        <button id="closeRanked">
+          <img src="./src/assets/x.svg" alt="" />
+        </button>
+        <table>
+          <tr>
+            <th>Pontuação</th>
+            <th>Patente</th>
+          </tr>
+          <tr class="odd">
+            <td>Menor que 1000</td>
+            <td>Ferro</td>
+          </tr>
+          <tr class="even">
+            <td>1001 - 2000</td>
+            <td>Bronze</td>
+          </tr>
+          <tr class="odd">
+            <td>2001 - 5000</td>
+            <td>Prata</td>
+          </tr>
+          <tr class="even">
+            <td>5001 - 7000</td>
+            <td>Ouro</td>
+          </tr>
+          <tr class="odd">
+            <td>7001 - 8000</td>
+            <td>Platina</td>
+          </tr>
+          <tr class="even">
+            <td>8001 - 9000</td>
+            <td>Ascendente</td>
+          </tr>
+          <tr class="odd">
+            <td>9001 - 10000</td>
+            <td>Imortal</td>
+          </tr>
+          <tr class="even">
+            <td>Acima de 10001</td>
+            <td>Radiante</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
